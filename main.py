@@ -39,8 +39,9 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def start_training(char_name: str, char_class: str) -> str:
-    """Class definition and practice of using attack,
-    defense and special ability."""
+    """Class definition.
+    Practice of using attack, defense and special ability.
+    """
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -72,8 +73,7 @@ def choice_char_class() -> str:
     while approve_choice != 'y':
         char_class = input(
             'Введи название персонажа, за которого хочешь играть: Воитель — '
-            'warrior, Маг — mage, Лекарь — healer: '
-        )
+            'warrior, Маг — mage, Лекарь — healer: ')
         if char_class == 'warrior':
             print(
                 'Воитель — дерзкий воин ближнего боя. Сильный, '
